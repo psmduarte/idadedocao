@@ -21,14 +21,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/texto_idade"
+        android:id="@+id/caixaTextoId"
         android:layout_width="191dp"
         android:layout_height="32dp"
         android:layout_marginBottom="26dp"
         android:background="@android:color/background_light"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/botao_calc"
+        app:layout_constraintBottom_toTopOf="@+id/botaoIdadeId"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -46,13 +46,13 @@
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/texto_idade"
+        app:layout_constraintBottom_toTopOf="@+id/caixaTextoId"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/botao_calc"
+        android:id="@+id/botaoIdadeId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="123dp"
@@ -60,5 +60,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/texto_idade" />
+        app:layout_constraintTop_toBottomOf="@+id/caixaTextoId" />
+
+    <TextView
+        android:id="@+id/resultadoIdadeId"
+        android:layout_width="209dp"
+        android:layout_height="33dp"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="433dp" />
 </android.support.constraint.ConstraintLayout>
