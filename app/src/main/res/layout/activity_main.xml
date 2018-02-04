@@ -16,21 +16,21 @@
         android:layout_marginTop="26dp"
         android:background="@drawable/cachorro"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/caixaTextoId"
         android:layout_width="191dp"
-        android:layout_height="32dp"
-        android:layout_marginBottom="26dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="23dp"
         android:background="@android:color/background_light"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/botaoIdadeId"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
@@ -42,7 +42,7 @@
         android:layout_marginStart="48dp"
         android:background="#4fc4d6"
         android:padding="10dp"
-        android:text="Digite a idade do seu cão para saber a idade dele em annos humanos."
+        android:text="Digite a idade do seu cão para saber a idade dele em anos humanos."
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="20sp"
@@ -55,19 +55,21 @@
         android:id="@+id/botaoIdadeId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="123dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="27dp"
         android:text="@string/descobrir_idade"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/resultadoIdadeId"
+        app:layout_constraintStart_toStartOf="@+id/caixaTextoId"
         app:layout_constraintTop_toBottomOf="@+id/caixaTextoId" />
 
     <TextView
         android:id="@+id/resultadoIdadeId"
-        android:layout_width="209dp"
-        android:layout_height="33dp"
+        android:layout_width="289dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="32dp"
         android:textColor="@android:color/background_light"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="433dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoIdadeId" />
 </android.support.constraint.ConstraintLayout>
